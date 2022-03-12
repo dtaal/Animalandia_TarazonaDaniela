@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {font-family: 'Lato', sans-serif;
+font-size: 16px;
+margin: 0px;}
+:root {
+    --dark-color:#191919;
+    --white-color: #FFFFFF;
+    --purple-color: rgb(117,41,149);
+    --blue-color:#00B3B1;
+    --gray-color:#828282;
+    --light-color:#F3F3F3;
+}
+h1,h2,h3 {font-family: 'Lato', sans-serif;
+color: var(--purple-color);
+}
+p {color: var(--dark-color);
+text-align: justify;
+}
+
+header {display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;}
+
+.logo img {max-width: 270px;
+width: 100%;}
+.b-azul, .b-morado {
+	padding: 0.5rem;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+.b-azul {
+	background-color: var(--blue-color);
+	background: linear-gradient(#00b2b1, #016e6e);
+	border-radius: 5px;
+	border-color: var(--blue-color);
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+
+}
+.b-morado{
+	background-color: var(--purple-color);
+	border-radius: 5px;
+	border-style: solid;
+	border-color: var(--purple-color);
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	color: var(--white-color);
+	cursor: pointer;
+}
+
+.b-azul:hover{
+	background: linear-gradient( #016e6e, #00b2b1);
+	transition: all 1s ease 1s;
+}
+
+.b-morado:hover{
+	background: var(--white-color);
+	color: var(--purple-color);}
+
+nav {display: flex;
+background-color: var(--purple-color);
+}
+.item {padding: 1rem;
+color: var(--light-color);
+text-decoration: none;}
+
+.item:hover {
+color: rgba(255, 255, 255, 0.4);
+text-decoration: solid var(--light-color);
+}
+#agenda {display: flex;
+}
+
+.cita {flex-basis:150%;
+    background-image: url(../img/fondo-.jpg);
+    padding:2rem;
+}
+.cita h1 {color: var(--dark-color);
+    font-size: 30px;
+
+}
+.cita h3 {color: var(--dark-color);
+font-size: 18px;
+text-transform: uppercase;
+font-weight: 600px;}
+
+.promocion {flex-basis: 70%;
+background-color: var(--purple-color);
+text-align: center;
+padding: 2rem;
+margin-top: 0.2rem;
+}
+.promocion h1 {color: var(--light-color);
+font-size: 28px;
+text-shadow: 2px 2px 2px var(--dark-color);}
+
+.promocion img {border-radius: 50%;
+border: 7px solid var(--white-color);}
+
+.tsection {
+text-align: center;
+font-weight: bolder;
+text-shadow: 2px 2px 2px 2px var(--dark-color);
+font-size: 32px;
+}
+
+#servicios {display:flex;
+justify-content: space-between;
+}
+
+.service {margin:10px 15px 10px 15px;
+text-align: center;}
+
+.service img {
+max-width: 200px;
+width: 100%;}
+
+footer {background-image: url(../img/fondo-.jpg);
+color: var(--white-color);}
+
+.foot {text-align: center;}
+
+.foot h3 {color: var(--white-color);}
+.foot p {color: var(--white-color);}
+
+.box-footer {display:flex;
+justify-content: space-around;
+padding: 2rem;
+background-color: rgba(117,41,149, 0.5);
+}
+
+/*EQUIPOS*/
+
+.banner {
+width: 100%;}
+
+.tsection {padding: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px 2px var(--dark-color);
+    font-size: 32px;}
+
+#equipos {display: flex;
+justify-content: space-between;
+padding: 2rem;}
+
+.equipo {align-items: center;
+text-align: center;
+margin: 10px 15px 10px 15px;
+padding: 2rem;}
+
+.equipo img {max-width: 200px;
+width: 100%;
+border-radius: 50%;}
+
+/* SERVICIOS */
+#banner-servicio {width: 100%;}
+
+#nuestros-servicios {display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+padding: 1em;
+}
+
+.servicio {display: flex;
+text-align: justify;
+margin: 0px 20px;
+align-items:center;
+flex: 40%;
+}
+
+.servicio h3 {color: var(--dark-color);
+    font-size: 20px;
+}
+
+.servicio img {margin-right: 1rem;
+width: 150px;}
+
+
+/*ESTILOS CONTACTO*/
+
+#contacto {display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.mapa iframe {display:flex; 
+    border-radius: 30%;
+    border: solid var(--dark-color) 5px;
+    margin: 25px;
+    justify-content: center;
+	margin-left: 30%;
+}
+
+.info-contacto p {text-align:center;
+margin: 20px;
+padding: 20px;
+font-size: 30px;
+color: var(--purple-color);
+justify-content: center;
+margin-left: 25%;}
+
+#form-contacto {display: flex;
+    flex-direction:column;
+    align-items: center;
+justify-content: center;
+padding: 1rem;
+margin: 10px;
+border-radius: 5%;
+color: var(--dark-color);
+  background-color:#00B3B1;
+    max-width: 500px;   
+	margin-left: 5%;  
+}
+
+
+.form i {margin: 12px 12px;
+padding: 1rem;
+size: 10px;
+border: var(--dark-color) solid;
+border-radius: 50%;
+margin-left: 40%;}
+
+.form {align-items: center;
+    background-image: url(../img/fondo-.jpg);
+    border: #00B3B1 solid 2px;
+    color: var(--dark-color);
+    margin: 12px;
+    padding: 10px;
+	border-radius: 10%;
+}
+
+/*ESTILOS LOGIN*/
+
+p {
+	text-align: justify;
+}
+#login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.form-login h1{
+	text-align: center;
+}
+.form-login i {
+	color: var(--purple-color);
+	background-color: var(--white-color);
+	padding: 1rem 0.8rem;
+	border-radius: 100%;
+	border: 4px solid var(--gray-color);
+}
+
+.form-login {
+	margin-top: 10px;
+	max-width: 400px;
+	width: 100%;
+	box-shadow: 1px 1px 2px var(--dark-color);
+	background-color: var(--light-color);
+	border-radius: 5px;
+	padding: 40px;
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	justify-content: center;
+}
+.form-label {
+	font-weight: bold;
+}
+
+.form-input {
+	border: 3px solid var(--gray-color);
+	padding: 0.5rem;
+	outline: none; 
+}
+.form-input:focus {
+	border: 3px solid var(--purple-color);
+}
+.form-input::placeholder {
+	font-size:  0.8rem;
+}
+
+.form-olvido {
+	text-align: center;
+	color: var(--blue-color);
+	font-size: 0.9rem;
+}
+
+.index-log {background-color:#00B3B1;
+color: #FFFFFF;
+padding: 10px;}
+
+.index-log i {margin-right: 10px;
+border-radius: 50%;
+border: solid 2px var(--purple-color);
+padding: 5px;
+background-color: var(--purple-color);}
+
+/* ESTILOS DASHBOARD */
+
+#header {display: flex;
+justify-content: space-between;
+padding: 0.5rem;}
+
+.sesion {text-align: right;
+color: var(--purple-color);
+display: flex;
+align-items: center;}
+
+.sesion img {max-width: 60px;
+width: 100%;
+border-radius: 50%;
+border: 3px solid var(--purple-color);}
+
+#dashboard {display: flex;}
+
+.menu-1 {flex-basis: 20%;
+background-color: var(--dark-color);
+color: var(--white-color);
+height: 100vh;
+font-family:'Lato', sans-serif;}
+
+.menu-1 a {text-decoration: none;
+color: #FFFFFF;
+}
+
+.menu-1 ul {list-style: none;
+padding: 0px;
+display: flex;
+flex-direction: column;
+}
+
+.menu-1 li:hover {background-color: var(--purple-color);
+color:#191919;
+border: 3px solid var(--white-color);
+padding-left: 40px;
+transition: all 2s;}
+
+.menu-1 i {margin: 3px;}
+
+.item-1 {padding: 20px;}
+
+.contenido {flex-basis: 80%;
+background-color: var(--light-color);
+padding: 30px;}
+
+/* ESTILOS TIPS */
+
+#tips {display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	padding: 1em;
+	
+	}
+	
+.tip {display: flex;
+text-align: justify;
+margin: 0px 20px;
+align-items:center;
+flex: 40%;
+margin-bottom: 30px;
+}
+	
+.tip h3 {color:var(--purple-color);
+font-size: 20px;
+}
+	
+.tip img {margin-right: 1rem;
+width: 150px;}
+
+/*PRODUCTO*/
+
+.table-intro {display: flex;
+justify-content: space-between;
+align-items: center;}
+
+.table-intro img {max-width: 100px;}
+
+.form-busqueda {display: flex;
+justify-content: space-between;
+margin: 20px 0px;}
+
+.form-busqueda input[type="text"]{
+	flex-basis: 80%;
+	padding: 10px;
+	border: 2px solid var(--dark-color);
+}
+
+.form-busqueda button {flex-basis: 20%;
+margin-left: 20px;}
+
+table {width: 100%;
+border: 2px solid var(--dark-color);
+border-collapse: collapse;}
+
+table th {border: 2px solid var(--dark-color);
+background-color: var(--purple-color);
+color: var(--white-color);
+padding: 8px;}
+table td {border: 2px solid var(--dark-color);
+text-align: center;}
+
+/*ESTILOS PRODUCTO ADD*/
+
+.form-producto {max-width: 800px;
+margin: 0% auto;}
+
+.form-producto label {color: var(--dark-color)}
+
+.form-producto select {color: var(--dark-color);
+font-size: 1rem;
+font-weight: bold;}
+
+.form-producto input[type="submit"] {background-color: var(--purple-color); color: #FFFFFF; padding: 5px;}
+
